@@ -3,3 +3,6 @@ This is a collection of chibeepatag's answers to programming exercises. Most of 
 
 ## Ruby
 * zigzag.rb
+
+### To run test  
+ruby test/filename
