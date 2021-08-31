@@ -1,3 +1,6 @@
+# @param {String} s
+# @param {Integer} num_rows
+# @return {String} answer - s converted to a zigzag pattern given the number of rows
 def convert(s, num_rows)
   rows = initialize_rows(num_rows)
   final_pattern = pattern(s, num_rows)
