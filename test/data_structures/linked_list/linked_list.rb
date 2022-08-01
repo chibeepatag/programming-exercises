@@ -8,7 +8,7 @@ describe LinkedList do
         list.push(v)
       end
       size = list.size
-      expect(size).to eq 8
+      expect(size).to eq 8      
     end
 
     it "should print the linked list" do 
@@ -37,7 +37,18 @@ describe LinkedList do
       expect(array).to eq [8, 7, 6, 5, 4, 3, 2, 1]
     end
 
-    it "should find the middle of the linked list" do 
+    it "should find the middle of the linked list" do
+      list = LinkedList.new()
+      (1..8).each do |v|
+        list.push(v)
+      end
+      expect(list.find_middle.value).to eq 5
+
+      list = LinkedList.new()
+      (1..7).each do |v|
+        list.push(v)
+      end
+      expect(list.find_middle.value).to eq 4
     end
   end
 end

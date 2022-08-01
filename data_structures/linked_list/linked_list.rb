@@ -61,7 +61,6 @@ class LinkedList
 
   def find_middle
     mid = (@size.to_f / 2.0).ceil
-    puts mid: mid
     current = @root
     (1..mid).each do
       current = current.next
